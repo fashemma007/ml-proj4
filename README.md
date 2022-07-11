@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![CircleCI](https://circleci.com/gh/fashemma007/ml-proj4.svg?style=svg&circle-token=<YOUR_STATUS_API_TOKEN>)](https://app.circleci.com/pipelines/github/fashemma007/ml-proj4/2/workflows/e2f0a5fa-d50c-46c9-8fff-2fe0024a7623)
 
 ## Project Overview
 
@@ -51,14 +51,14 @@ source .devops/bin/activate
 
 |Directory|	Description|
 |---------|---------------|
-|Circleci	|Contains config.yml file for circleci
-|Model Data	|Showing housing prices in the boston area
-|Output_files	|Showing docker and kubernetes log outputs
-|app.py	|REST endpoint in flask containing containing routes to fetch house prices in boston
-|Dockerfile	|Docker creation files with dependencies
-|make_predictions.sh|	Call to log output predictions from the REST api end point
-|Makefile	|to install project dependcies and lint
+|[Circleci](.circleci/config.yml)	|Contains config.yml file for circleci
+|[Model Data](model_data/)	|Showing housing prices in the boston area
+|[Output_files](output_txt_files/)	|Showing docker and kubernetes log outputs
+|[app.py](app.py)	|REST endpoint in flask containing containing routes to fetch house prices in boston
+|[Dockerfile](Dockerfile)	|Docker creation files with dependencies
+|[make_predictions.sh](make_prediction.sh) |Call to log output predictions from the REST api end point
+|[Makefile	](Makefile)|to install project dependcies and lint
 |requirements.txt|	Python dependencies for the project
-|run_docker	|shell script to build the docker file
-|run_kuberbetes	|shell script to run and start up docker image in kubernetes
-|upload_docker	|shell script to upload locally built image to docker hub
+|[run_docker	](run_docker.sh)|shell script to build the docker file
+|[run_kuberbetes](run_kubernetes.sh)	|shell script to run and start up docker image in kubernetes
+|[upload_docker](upload_docker.sh)	|shell script to upload locally built image to docker hub
